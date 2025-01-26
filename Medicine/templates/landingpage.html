@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div>
+        <header class="p-3 text-bg-dark">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <img src="../static/logo.jpg" alt="" style="height:40px; width:40px; border-radius:50%">
+                        <!-- <p class="mt-1 pt-2 fs-5">Health Center + </p> -->
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                        <li><a href="#feature" class="nav-link px-2 text-white">Features</a></li>
+                        <li><a href="/developer" class="nav-link px-2 text-white">Developer</a></li>
+                        <li><a href="/contact" class="nav-link px-2 text-white">Contact</a></li>
+                        <li><a href="/about" class="nav-link px-2 text-white">About</a></li>
+                    </ul>
+
+                    <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control form-control-dark text-bg-secondary" placeholder="Search..." aria-label="Search">
+          </form> -->
+
+                    <div class="text-end">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#authModal">
+                            Login / Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img style="height: 700px" src="../static/d3.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block text-white text-start" style="margin-bottom: 200px;">
+                        <h1 style="font-size:100px">Find nearby <br>doctors</h1>
+                        <p style="font-size:30px">
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="height: 700px" src="../static/chatbot.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 style="font-size:50px ">AI-Powered Chatbot for Medical Queries
+                        </h1>
+          
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="height: 700px" src="../static/h1.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block" style="margin-bottom: 290px; margin-left: 330px;">
+                        <h1 style="font-size:40px;">Personalized Disease<br> and Treatment <br>Recommendations</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="container my-5">
+        <h2>Features of Our Healthcare Recommendation Website</h2>
+        <hr>
+        <div class="row featurette">
+            <div class="col-md-7 w-50 align-items-center">
+                <h2 class="featurette-heading fw-normal lh-1">Personalized Disease and Treatment Recommendations <span
+                        class="text-body-secondary">Based on Your Symptoms</span></h2>
+                <p class="lead">We provide personalized disease, prevention, medicine, and diet recommendations based on
+                    the symptoms you input. Get accurate and helpful information at your fingertips on CareNexus.</p>
+            </div>
+            <div class="col-md-5 w-50">
+                <img src="./../static/opd.jpg" alt="opd" height="300" width="500">
+            </div>
+        </div>
+        <br>
+        <div class="row featurette mt-4">
+            <div class="col-md-7 order-md-2 w-50 align-items-center">
+                <h2 class="featurette-heading fw-normal lh-1">AI-Powered Chatbot for Medical Queries <span
+                        class="text-body-secondary">Get Personalized Help Anytime</span></h2>
+                <p class="lead">Our Llama-powered chatbot allows users to ask any medical-related questions and receive
+                    personalized responses to help with their concerns, 24/7.</p>
+            </div>
+            <div class="col-md-5 order-md-1 w-50">
+                <img src="./../static/doctor_robot.jpg" alt="opd" height="300" width="500">
+            </div>
+        </div>
+        <br>
+        <div class="row featurette mt-4">
+            <div class="col-md-7 w-50 align-items-center">
+                <h2 class="featurette-heading fw-normal lh-1">Find Nearby Doctors <span
+                        class="text-body-secondary">Based on Disease and Location</span></h2>
+                <p class="lead">Our Find Doctor feature lets users input the ailment they have and their location to
+                    find nearby doctors they can visit for further consultation and treatment.</p>
+            </div>
+            <div class="col-md-5 w-50">
+                <img src="./../static/patient.jpg" alt="opd" height="300" width="500">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid">
+        <div class="container mt-3 p-5 shadow-lg">
+            <div class="row ms-5">
+                <div class="col-lg-4 px-5 d-flex flex-column h-100">
+                    <img src="../static/p.jpg" alt="" style="height:150px; width:150px; border-radius:50%">
+                    <h2 class="fw-normal">Disease & Treatment Recommendations</h2>
+                    <p>Get personalized recommendations for diseases, prevention, medicines, and diet based on the symptoms you provide.</p>
+                    <p><a class="btn btn-primary align-self-end" href="/predict">Explore Now »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 d-flex flex-column h-100">
+                    <img src="../static/chatbot1.jpg" alt="" style="height:150px; width:150px; border-radius:50%">
+                    <h2 class="fw-normal">AI-Powered Medical Chatbot</h2>
+                    <p>Ask any medical-related queries and get personalized responses anytime with our AI-powered chatbot.
+                    <br>Whether you're seeking basic medical advice or specific treatment options, the chatbot will guide you through the necessary steps.</p>
+                    <p><a class="btn btn-primary align-self-end" href="/chatbot">Chat Now »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 d-flex flex-column h-100">
+                    <img src="../static/d2.jpg" alt="" style="height:150px; width:150px; border-radius:50%">
+                    <h2 class="fw-normal">Find Nearby Doctors</h2>
+                    <p>Input your symptoms and location to find nearby doctors who can help with your medical concerns.<br>
+                    This feature allows you to easily search for healthcare professionals nearby in your area who specialize in various medical fields. This service is designed to help you quickly find medical attention when you need it most.</p>
+                    <p><a class="btn btn-primary align-self-end" href="/finddoctor">Find a Doctor »</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <div id="feature">
+        <div class="container-fluid px-4 py-5 mt-5" style="background-color:rgb(138, 206, 255);" id="featured-3">
+            <h2 class="pb-2 border-bottom text-center">Our Features</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+
+                    <img src="../static/expert.png" alt="" style="height:100px; width:100px; margin-left: 160px;">
+
+                    <h3 class="fs-2 text-body-emphasis">Personalized Recommendations</h3>
+                    <p>Get medicines tailored to your symptoms and health history.</p>
+                    <a href="#" class="icon-link">
+                        Call to action
+                        <svg class="bi">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature col">
+
+                    <img src="../static/personalized.png" alt="" style="height:100px; width:100px; margin-left: 160px;">
+
+                    <h3 class="fs-2 text-body-emphasis">Expert Insights</h3>
+                    <p>Access articles and blogs written by healthcare professionals.</p>
+                    <a href="#" class="icon-link">
+                        Call to action
+                        <svg class="bi">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature col">
+
+                    <img src="../static/contact.png" alt="" style="height:100px; width:100px; margin-left: 160px;">
+
+                    <h3 class="fs-2 text-body-emphasis">Contact Experts</h3>
+                    <p>Reach out to certified professionals for further assistance.</p>
+                    <a href="#" class="icon-link">
+                        Call to action
+                        <svg class="bi">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="container-fluid">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg></a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="authModalLabel">Login / Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Nav pills for Login / Sign up -->
+                    <ul class="nav nav-pills" id="authTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="login-tab" data-bs-toggle="pill" href="#login" role="tab"
+                                aria-controls="login" aria-selected="true">Login</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="signup-tab" data-bs-toggle="pill" href="#signup" role="tab"
+                                aria-controls="signup" aria-selected="false">Sign Up</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content mt-3" id="authTabContent">
+                        <!-- Login Form -->
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="loginUsername" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="loginUsername"
+                                        placeholder="Enter your username">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="loginPassword"
+                                        placeholder="Enter your password">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                            </form>
+                        </div>
+
+                        <!-- Sign Up Form -->
+                        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="signupUsername" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="signupUsername"
+                                        placeholder="Create a username">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="signupEmail"
+                                        placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="signupPassword"
+                                        placeholder="Create a password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="signupConfirmPassword"
+                                        placeholder="Confirm your password">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

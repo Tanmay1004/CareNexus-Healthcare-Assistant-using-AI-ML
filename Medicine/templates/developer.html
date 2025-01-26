@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developers - Healthcare Recommendation Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header p {
+  margin-top: 10px;
+}
+
+.about-project, .developers {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-project h2, .developers h2 {
+  color: #007bff;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 10px 0 0 20px;
+}
+
+.developer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.developer-card {
+  text-align: center;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.developer-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.developer-card h3 {
+  margin: 10px 0 5px;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+
+  <div style="background-color: black">
+    <header class="p-3  border-bottom" >
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                <img src="../static/logo.jpg" alt="" style="height:40px; width:40px; border-radius:50%" >
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="/" class="nav-link px-2 link-warning text-white">Home</a></li>
+              <li><a href="/developer" class="nav-link px-2 link-warning text-white">Developer</a></li>
+              <li><a href="/contact" class="nav-link px-2 link-warning text-white">Contact</a></li>
+              <li><a href="/about" class="nav-link px-2 link-warning text-white">About</a></li>
+            </ul>
+    
+            <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form> -->
+    
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../static/profile.png" alt="mdo" width="42" height="42" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+</div>
+
+
+  <header class="header">
+    <h1>Meet the Developers</h1>
+    <p>Learn more about the minds behind this innovative healthcare solution.</p>
+  </header>
+
+  <section class="about-project">
+    <h2>About the Project</h2>
+    <p>
+      This healthcare recommendation website is designed to assist users with medical needs. It offers:
+    </p>
+    <ul>
+      <li><strong>Symptom-Based Recommendations:</strong> Enter symptoms to get suggestions for diseases, prevention, medicines, descriptions, diets, and more.</li>
+      <li><strong>LLAMA Chatbot:</strong> Ask personalized medical queries and get expert guidance.</li>
+      <li><strong>Find Doctors:</strong> Locate nearby doctors based on symptoms and location for immediate consultation.</li>
+    </ul>
+    <p>
+      This project was developed as part of the <strong>LNMHacks</strong> hackathon by a team of four talented individuals.
+    </p>
+  </section>
+
+  <section class="developers">
+    <h2>Meet the Team</h2>
+    <div class="developer-cards">
+      <div class="developer-card">
+        <h3>Tanmay Sharma</h3>
+        <p>Team Leader & Lead Developer</p>
+      </div>
+      <div class="developer-card">
+        <h3>Vansh Tuteja</h3>
+        <p>Backend Developer & AI/ML Specialist</p>
+      </div>
+      <div class="developer-card">
+        <h3>Sourav Poonia</h3>
+        <p>Frontend Developer</p>
+      </div>
+      <div class="developer-card">
+        <h3>Saurabh Prajapat</h3>
+        <p>UI/UX Designer</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Developed for <strong>LNMHacks Hackathon</strong> | 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

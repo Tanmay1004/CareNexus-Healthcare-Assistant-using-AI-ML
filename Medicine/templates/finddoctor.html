@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Doctor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div style="background-color: black">
+        <header class="p-3 mb-3 border-bottom" >
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <img src="../static/logo.jpg" alt="" style="height:40px; width:40px; border-radius:50%" >
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="/" class="nav-link px-2 link-warning text-white">Home</a></li>
+                  <li><a href="/developer" class="nav-link px-2 link-warning text-white">Developer</a></li>
+                  <li><a href="/contact" class="nav-link px-2 link-warning text-white">Contact</a></li>
+                  <li><a href="/about" class="nav-link px-2 link-warning text-white">About</a></li>
+                </ul>
+        
+                <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form> -->
+        
+                <div class="dropdown text-end">
+                  <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../static/profile.png" alt="mdo" width="42" height="42" class="rounded-circle">
+                  </a>
+                  <ul class="dropdown-menu text-small">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+    </div>
+    
+
+    <div class="container shadow-lg mt-5">
+        <main class="form-signin w-100 m-auto">
+            <form action="/finddoctordetail" method="post">
+                <div class="text-center">
+                    <h2>Find your doctor:</h2>
+                </div>
+                <h1 class="h3 mb-3 fw-normal">Please fill the following details:</h1>
+                <div class="form-floating mb-3">
+                    <label for="diseaseInput">Enter Disease Name:</label>
+                    <input type="text" class="form-control" id="diseaseInput" name="diseasename" placeholder="Enter Disease">
+                </div>
+                <div class="form-floating mb-3">
+                    <label for="locationInput">Location:</label>
+                    <input type="text" class="form-control" id="locationInput" name="location" placeholder="Enter Location">
+                </div>
+                <button class="btn btn-primary w-100 py-2" type="submit">Find</button>
+            </form>
+        </main>
+        <div id="doctorList" class="mt-5">
+            {% if doctor_list %}
+                <h3 class="text-center">Available Doctors</h3>
+                <table class="table table-bordered table-striped mt-3">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Specialization</th>
+                            <th>Location</th>
+                            <th>Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for doctor in doctor_list %}
+                        <tr>
+                            <td>{{ doctor.Name }}</td>
+                            <td>{{ doctor.DoctorDescription }}</td>
+                            <td>{{ doctor.Location }}</td>
+                            <td>{{ doctor.Contact }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% elif message %}
+                <div class="alert alert-warning text-center">
+                    {{ message }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
